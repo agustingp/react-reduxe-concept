@@ -12,6 +12,8 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
             <div>
+            <button
+             onClick={() => this.props.setName('ticky')}>Cambiar nombre</button>
 
             <p>
             {this.props.user.name}
