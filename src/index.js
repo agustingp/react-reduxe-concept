@@ -8,7 +8,9 @@ import todoApp from './reducers';
 import App from './containers/app.container.js'
 
 const store=createStore(todoApp);
-
+store.subscribe(() => {
+    console.log("Store updated!", store.getState());
+});
 
 ReactDOM.render(
   <Provider store={store} ><App /></Provider>,  

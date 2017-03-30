@@ -6,10 +6,10 @@ export const setName=(name)=> (
             }
 )
 
-export const setTipe=(tipe)=> (
+export const setTipe=(type)=> (
             {
-                type: "SET_TIPE",
-                payload: tipe
+                type: "SET_TYPE",
+                payload: type
             }
 )
 

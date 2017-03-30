@@ -25,7 +25,11 @@ export default ({ infoPerfil }) => {
       </div>
       <div className="campo-panel-info-perfil">
         <label htmlFor="nombre"> Descripcion </label>
+<<<<<<< HEAD
+        <textarea defaultValue={ infoPerfil.descrription } size="30" />
+=======
         <textarea defaultValue={ infoPerfil.description } size="30" />
+>>>>>>> 0ab306ff0fe466ee52f8a5de2661956cf835a2b3
       </div>
     </div>
 )};

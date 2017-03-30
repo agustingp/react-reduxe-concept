@@ -4,10 +4,14 @@ import PanelPerfil from './PanelInformacionPerfil';
 
 export default ({ ong, OnSignInUp }) => {
   return (
+<<<<<<< HEAD
+  <form onSubmit={ OnSignInUp(ong) }>
+=======
   <form onSubmit={(e) => {
          e.preventDefault();
          OnSignInUp(ong);
        }}>
+>>>>>>> 0ab306ff0fe466ee52f8a5de2661956cf835a2b3
     <PanelPerfil infoPerfil={ ong } />
     <input type="submit" value="Sign-In" />
   </form>

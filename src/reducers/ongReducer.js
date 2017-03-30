@@ -18,10 +18,10 @@ const ongReducer = (state = initialState, action) => {
                 ...state,
                 nombre: action.payload
             };
-         case "SET_TIPE":
+         case "SET_TYPE":
              return {
                 ...state,
-                tipe: action.payload
+                type: action.payload
             };
          case "SET_PHONE":
              return {
@@ -43,10 +43,10 @@ const ongReducer = (state = initialState, action) => {
                 ...state,
                 description: action.payload
             };
-         case "add_ONG":
+         case "ADD_ONG":
              return {
-                name: action.payload.name,
-                tipe: action.payload.tipe,
+                name: 'agustin',
+                type: action.payload.type,
                 phone: action.payload.phone,
                 email: action.payload.email,
                 website: action.payload.website,
