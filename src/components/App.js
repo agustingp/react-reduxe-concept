@@ -2,7 +2,7 @@ import React, { Component, PropTypes  } from 'react';
 import logo from '../logo.svg';
 import {connect} from "react-redux";
 import '../App.css';
-
+import PanelInformacionPerfil from'./PanelInformacionPerfil';
 
 const App = ({user})=> (<div className="App">
         <div className="App-header">
@@ -17,11 +17,19 @@ const App = ({user})=> (<div className="App">
             </p>
 
             </div>
-
+            <PanelInformacionPerfil infoPerfil={state}/>
     
       </div>
 
 )
 
+let state={
+nombre: 'Quiero Ayudar',
+tipo: 'Asociación Civil',
+telefono: '0303456',
+email: 'quiero@ayudar.com',
+website: 'www.quieroayudar.com.ar',
+descripcion: 'Somos una ONG que quiere ayudar'
+}
 
 export default App;

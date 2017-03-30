@@ -5,7 +5,4 @@ export const setName=(name)=> (
                 payload: name
             }
 
-)
-
-
-            
+);
