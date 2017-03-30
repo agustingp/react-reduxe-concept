@@ -5,15 +5,15 @@ export default ({ infoPerfil }) => {
     <div className="panel-info-perfil">
       <div className="campo-panel-info-perfil">
         <label htmlFor="nombre"> Nombre de la ONG </label>
-        <input type="text" value={ infoPerfil.nombre } size="30" />
+        <input type="text" value={ infoPerfil.name } size="30" />
       </div>
       <div className="campo-panel-info-perfil">
         <label htmlFor="nombre"> Tipo </label>
-        <input type="text" value={ infoPerfil.tipo } size="30" />
+        <input type="text" value={ infoPerfil.type } size="30" />
       </div>
       <div className="campo-panel-info-perfil">
         <label htmlFor="nombre"> Teléfono </label>
-        <input type="text" value={ infoPerfil.telefono } size="30" />
+        <input type="text" value={ infoPerfil.phone } size="30" />
       </div>
       <div className="campo-panel-info-perfil">
         <label htmlFor="nombre"> Email </label>
@@ -25,7 +25,7 @@ export default ({ infoPerfil }) => {
       </div>
       <div className="campo-panel-info-perfil">
         <label htmlFor="nombre"> Descripcion </label>
-        <textarea value={ infoPerfil.descripcion } size="30" />
+        <textarea value={ infoPerfil.descrription } size="30" />
       </div>
     </div>
 )};

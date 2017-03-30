@@ -1,6 +1,6 @@
-import { conect } from 'react-redux';
+import { connect } from 'react-redux';
 import { addONG } from '../actions';
-//import SinginUp from '../components';
+import SinginUp from '../components/SignInUp';
 
 const mapStateToProps = (state) => {
   return {
@@ -18,9 +18,9 @@ const mapDispatchToProps = (dispatch) => {
   }
 };
 
-export default conect({
+export default connect(
   mapStateToProps,
   mapDispatchToProps
-})(
-  //SinginUp
+)(
+  SinginUp
 );

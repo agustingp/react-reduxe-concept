@@ -39,9 +39,11 @@ export const setDescription=(description)=> (
                 type: "SET_DESCRIPTION",
                 payload: description
             }
+)
+
 export const addONG=(ong)=> (
             {
-                type: "add_ONG",
+                type: "ADD_ONG",
                 payload: ong
             }
 )

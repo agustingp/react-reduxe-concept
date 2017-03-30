@@ -1,7 +1,7 @@
 
 const initialState = {
 name: 'Quiero Ayudar',
-tipe: 'Asociación Civil',
+type: 'Asociación Civil',
 phone: '0303456',
 email: 'quiero@ayudar.com',
 website: 'www.quieroayudar.com.ar',
@@ -54,10 +54,9 @@ const ongReducer = (state = initialState, action) => {
 
             };
           default:
-                return state  
-            
+                return state
     }
    
 };
 
-export default userReducer;
+export default ongReducer;
