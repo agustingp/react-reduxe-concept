@@ -45,12 +45,12 @@ const ongReducer = (state = initialState, action) => {
             };
          case "ADD_ONG":
              return {
-                name: 'agustin',
-                type: action.payload.type,
-                phone: action.payload.phone,
-                email: action.payload.email,
-                website: action.payload.website,
-                description: action.payload.description
+                name: action.payload.name.value,
+                type: action.payload.type.value,
+                phone: action.payload.phone.value,
+                email: action.payload.email.value,
+                website: action.payload.website.value,
+                description: action.payload.description.value
 
             };
           default:
