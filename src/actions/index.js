@@ -47,3 +47,8 @@ export const addONG=(ong)=> (
                 payload: ong
             }
 )
+
+export const setScreen = (screen) => ({
+    type: "SET_SCREEN",
+    payload: screen
+})

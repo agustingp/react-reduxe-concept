@@ -4,7 +4,7 @@ import PanelPerfil from './PanelInformacionPerfil';
 
 export default ({ ong, OnSignInUp }) => {
   return (
-  <form onSubmit={ OnSignInUp }>
+  <form onSubmit={ OnSignInUp(ong) }>
     <PanelPerfil infoPerfil={ ong } />
     <input type="submit" value="Sign-In" />
   </form>
