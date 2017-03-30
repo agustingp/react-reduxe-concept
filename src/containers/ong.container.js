@@ -1,19 +1,18 @@
 import { conect } from 'react-redux';
-//import { addONGAction } from '../actions';
+import { addONG } from '../actions';
 //import SinginUp from '../components';
 
-const mapStateToProps = (state, ownProp) => {
+const mapStateToProps = (state) => {
   return {
-    //ver que va acá
+    ong: state.ongReducer
   };
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    OnSignInUp: () => {
+    OnSignInUp: (ong) => {
       dispatch(
-        //Aca llamar la accion
-        //addONGAction
+       addONG(ong)
       );
     }
   }
